@@ -1,0 +1,302 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block body %}
+    <header>
+        {% include 'partials/_top-nav.html' %}
+        {% include 'partials/_nav.html' %}
+        {% include 'partials/_hero.html' %}
+    </header>
+
+    <main>
+        <section class="sp-1 top-deals-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <h3 class="sctn-ttl">Our top deals</h3>
+                    </div>
+                </div>
+                <div class="row wrapper">
+                    <div class="col-sm-6 col-lg-4">
+                        <figure class="top-deals-item">
+                            <span class="pricing">$499</span>
+                            <div class="img-wrapper">
+                                <img src="{% static 'img/deals1.jpg' %}" alt="#" class="img-fluid">
+                            </div>
+                            <figcaption class="d-flex">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="wrapper">
+                                    <h6>Madives</h6>
+                                    <small>50+ Hotels</small>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <figure class="top-deals-item">
+                            <span class="pricing">$499</span>
+                            <div class="img-wrapper">
+                                <img src="{% static 'img/deals2.jpg' %}" alt="#" class="img-fluid">
+                            </div>
+                            <figcaption class="d-flex">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="wrapper">
+                                    <h6>Madives</h6>
+                                    <small>50+ Hotels</small>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <figure class="top-deals-item">
+                            <span class="pricing">$499</span>
+                            <div class="img-wrapper">
+                                <img src="{% static 'img/deals3.jpg' %}" alt="#" class="img-fluid">
+                            </div>
+                            <figcaption class="d-flex">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="wrapper">
+                                    <h6>Madives</h6>
+                                    <small>50+ Hotels</small>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <figure class="top-deals-item">
+                            <span class="pricing">$499</span>
+                            <div class="img-wrapper">
+                                <img src="{% static 'img/deals4.jpg' %}" alt="#" class="img-fluid">
+                            </div>
+                            <figcaption class="d-flex">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="wrapper">
+                                    <h6>Madives</h6>
+                                    <small>50+ Hotels</small>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <figure class="top-deals-item">
+                            <span class="pricing">$499</span>
+                            <div class="img-wrapper">
+                                <img src="{% static 'img/deals5.jpg' %}" alt="#" class="img-fluid">
+                            </div>
+                            <figcaption class="d-flex">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="wrapper">
+                                    <h6>Madives</h6>
+                                    <small>50+ Hotels</small>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <figure class="top-deals-item">
+                            <span class="pricing">$499</span>
+                            <div class="img-wrapper">
+                                <img src="{% static 'img/deals6.jpg' %}" alt="#" class="img-fluid">
+                            </div>
+                            <figcaption class="d-flex">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="wrapper">
+                                    <h6>Madives</h6>
+                                    <small>50+ Hotels</small>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <figure class="top-deals-item">
+                            <span class="pricing">$499</span>
+                            <div class="img-wrapper">
+                                <img src="{% static 'img/deals7.jpg' %}" alt="#" class="img-fluid">
+                            </div>
+                            <figcaption class="d-flex">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="wrapper">
+                                    <h6>Madives</h6>
+                                    <small>50+ Hotels</small>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <figure class="top-deals-item">
+                            <span class="pricing">$499</span>
+                            <div class="img-wrapper">
+                                <img src="{% static 'img/deals8.jpg' %}" alt="#" class="img-fluid">
+                            </div>
+                            <figcaption class="d-flex">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="wrapper">
+                                    <h6>Madives</h6>
+                                    <small>50+ Hotels</small>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <figure class="top-deals-item">
+                            <span class="pricing">$499</span>
+                            <div class="img-wrapper">
+                                <img src="{% static 'img/deals9.jpg' %}" alt="#" class="img-fluid">
+                            </div>
+                            <figcaption class="d-flex">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="wrapper">
+                                    <h6>Madives</h6>
+                                    <small>50+ Hotels</small>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="bttn">See All Deals</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sp-1 offer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-11 mx-auto">
+                        <h1 class="text-capitalize">Get 15% off your first travel</h1>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus porro
+                            laudantium deserunt magni minus. Maxime sequi unde voluptatum labore neque?</p>
+                        <a href="#" class="bttn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sp-1 feature-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <h3 class="sctn-ttl">Why choose us</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <img src="{% static 'img/speed.png' %}" alt="#" class="img-fluid">
+                            <h3 class="text-capitalize">Fast booking</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quis</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item">
+                            <img src="{% static 'img/sale.png' %}" alt="#" class="img-fluid">
+                            <h3 class="text-capitalize">Fast booking</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quis</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-0 feature-item">
+                            <img src="{% static 'img/conversation.png' %}" alt="#" class="img-fluid">
+                            <h3 class="text-capitalize">Fast booking</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <h3 class="sctn-ttl">From our blog</h3>
+                    </div>
+                </div>
+                <div class="row wrapper">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <figure class="img-wrapper">
+                                <img src="{% static 'img/blog1.jpg' %}" alt="#" class="img-fluid">
+                            </figure>
+                            <article>
+                                <time datetime="#">26 Oct, 2018</time>
+                                <h5>Say No To Lazy Life</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="mt-3 mt-md-0 blog-item">
+                            <figure class="img-wrapper">
+                                <img src="{% static 'img/blog2.jpg' %}" alt="#" class="img-fluid">
+                            </figure>
+                            <article>
+                                <time datetime="#">27 Nov, 2018</time>
+                                <h5>10 Things to do Before Travel</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-md-none d-lg-block">
+                        <div class="mt-3 mt-md-0 blog-item">
+                            <figure class="img-wrapper">
+                                <img src="{% static 'img/blog3.jpg' %}" alt="#" class="img-fluid">
+                            </figure>
+                            <article>
+                                <time datetime="#">11 Sep, 2018</time>
+                                <h5>Lots of Activities Planned</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sp-1 videos-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <h3 class="sctn-ttl">Videos</h3>
+                    </div>
+                </div>
+                <div class="row text-center wrapper">
+                    <div class="col-md-5 offset-md-1">
+                        <div class="videos-item">
+                            <img src="{% static 'img/video1.png' %}" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mt-4 mt-md-0 videos-item">
+                            <img src="{% static 'img/video2.png' %}" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe-area">
+            <div class="sp-1 shadow">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <div class="subscribe-content">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <h4 class="text-capitalize">Subscribe to our newsletter</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                <form action="#">
+                                    <div class="input-grp">
+                                        <input type="email" class="form-cntrl" placeholder="Your E-mail Address">
+                                        <button type="submit" class="bttn">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'partials/_footer.html' %}
+{% endblock %}

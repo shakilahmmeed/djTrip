@@ -1,0 +1,89 @@
+.waves-block .waves {
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: waves;
+    animation-name: waves;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.waves-block .wave-1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waves-block .wave-2 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.waves-block .wave-3 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes waves {
+    0% {
+        -webkit-transform: scale(0.2, 0.2);
+        transform: scale(0.2, 0.2);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    }
+    100% {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+@keyframes waves {
+    0% {
+        -webkit-transform: scale(0.2, 0.2);
+        transform: scale(0.2, 0.2);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    }
+    100% {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+@keyframes topToBottom{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes bottomToTop{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+    }
+}

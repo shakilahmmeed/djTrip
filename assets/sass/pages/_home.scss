@@ -1,0 +1,418 @@
+header {
+    .top-nav {
+        background: #286788;
+        color: white;
+        padding: 10px 0px;
+
+        .contact-no {
+            p {
+                padding: 5px 12px;
+                border: 2px solid white;
+            }
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-size: 20px;
+                margin-right: 10px;
+            }
+
+            .social-icons {
+                display: flex;
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+
+                li {
+                    a {
+                        color: white;
+
+                        .fa {
+                            margin: 0px 5px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .lang {
+            margin-left: 20px;
+
+            select {
+                border: 2px solid white;
+                background: transparent;
+                padding: 5px 10px 6px;
+                color: white;
+            }
+        }
+    }
+}
+
+.hero-area {
+    background: url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    .wrapper {
+        padding: 60px 0px;
+
+        .hero-area-content {
+            .bttn {
+                color: white;
+                padding: 9px 30px;
+                border: 2px solid white;
+                text-decoration: none;
+                transition: 0.1s ease-in;
+                margin-top: 15px;
+                display: inline-block;
+
+                &:hover {
+                    background: white;
+                    color: black;
+                }
+            }
+        }
+
+        .input-box {
+            background: #286788c2;
+            padding: 40px;
+            margin-top: 50px;
+
+            form {
+                .input-grp {
+                    &:nth-child(2) {
+                        margin-top: 16px;
+                    }
+
+                    .form-cntrl {
+                        display: block;
+                        padding: 8px 10px;
+                        border: 2px solid white;
+                        background: transparent;
+                        width: 100%;
+                        color: white;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::placeholder {
+                            color: white;
+                        }
+                    }
+                }
+
+                button {
+                    border: 2px solid white;
+                    background: transparent;
+                    padding: 7px 35px;
+                    color: white;
+                    margin-top: 25px;
+                    cursor: pointer;
+                    transition: 0.1s ease-in;
+
+                    &:hover {
+                        background: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top-deals-area {
+    .top-deals-item {
+        position: relative;
+
+        .pricing {
+            color: white;
+            background: #25c316;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 2px 7px;
+        }
+
+        .img-wrapper {
+            height: 235px;
+            overflow: hidden;
+        }
+
+        figcaption {
+            margin-top: 15px;
+
+            i.fa {
+                font-size: 25px;
+            }
+
+            .wrapper {
+                margin-left: 10px;
+
+                h6 {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    .bttn {
+        background: #00a8ff;
+        padding: 10px 15px;
+        color: white;
+        display: inline-block;
+        margin-top: 30px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.offer-area {
+    background: url('../img/plane.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+
+    .bttn {
+        padding: 10px 35px;
+        color: white;
+        display: inline-block;
+        margin-top: 30px;
+        border: 2px solid white;
+        transition: 0.1s ease-in;
+
+        &:hover {
+            text-decoration: none;
+            background: white;
+            color: black;
+        }
+    }
+}
+
+.feature-area {
+    .feature-item {
+        margin-bottom: 30px;
+        text-align: center;
+
+        img {
+            width: 100px;
+        }
+
+        h3 {
+            margin-top: 15px;
+        }
+    }
+}
+
+.subscribe-area {
+    background: url('../img/subscribe.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .shadow {
+        background: rgba(0, 0, 0, 0.3);
+
+        .subscribe-content {
+            text-align: center;
+            color: white;
+
+            i.fa {
+                font-size: 50px;
+            }
+
+            form {
+                .input-grp {
+                    display: flex;
+                    justify-content: center;
+
+                    & > *:focus {
+                        outline: none;
+                    }
+
+                    .form-cntrl {
+                        border: none;
+                        padding: 10px 7px;
+                    }
+
+                    .bttn {
+                        border: none;
+                        background: #29b6fe;
+                        color: white;
+                        padding: 10px 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    header {
+        .hero-area {
+            .wrapper {
+                padding: 90px 0px;
+
+                .hero-area-content {
+                    .bttn {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .top-deals-area {
+        .wrapper {
+            &>*:last-child {
+                display: none;
+            }
+
+            .top-deals-item {
+                .img-wrapper {
+                    height: 160px;
+                }
+            }
+        }
+    }
+
+    .feature-area {
+        .feature-item {
+            img {
+                width: 110px;
+            }
+        }
+    }
+
+    .subscribe-area {
+        .shadow {
+            .subscribe-content {
+                form {
+                    .input-grp {
+                        .bttn {
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 100vh;
+
+        .hero-area {
+            height: calc(100% - 48px);
+
+            .wrapper {
+                .hero-area-content {
+                    h1 {
+                        font-size: rem(50);
+                    }
+                }
+
+                .input-box {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+
+    .top-deals-area {
+        .wrapper {
+            .top-deals-item {
+                .img-wrapper {
+                    height: 220px;
+                }
+            }
+        }
+    }
+
+    .feature-area {
+        .feature-item {
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    .subscribe-area {
+        .shadow {
+            .subscribe-content {
+                form {
+                    .input-grp {
+                        .bttn {
+                            padding: 10px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        .hero-area {
+            height: calc(100% - 138px);
+
+            .wrapper {
+                .hero-area-content {
+                    h1 {
+                        font-size: rem(68);
+                    }
+                }
+            }
+        }
+    }
+
+    .top-deals-area {
+        .wrapper {
+            &>*:last-child {
+                display: block;
+            }
+
+            .top-deals-item {
+                .img-wrapper {
+                    height: 194px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        .hero-area {
+            align-items: center;
+
+            .wrapper {
+                padding: 0px;
+
+                .input-box {
+                    padding: 75px;
+                }
+            }
+        }
+    }
+
+    .top-deals-area {
+        .wrapper {
+            .top-deals-item {
+                .img-wrapper {
+                    height: 235px;
+                }
+            }
+        }
+    }
+}

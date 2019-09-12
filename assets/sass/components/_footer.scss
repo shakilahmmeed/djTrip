@@ -1,0 +1,63 @@
+footer {
+    background: #353b49;
+    color: white;
+
+    .footer-nav {
+        .social {
+            i.fa {
+                margin-right: 7px;
+            }
+        }
+    
+        .contact {
+            margin: 10px 0px 0px;
+    
+            p {
+                margin: 0px;
+            }
+        }
+    }
+
+    .copyright {
+        background: #303236;
+        padding: 15px 0px;
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            
+            p {
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    footer {
+        .footer-nav {
+            .contact {
+                margin: 0px 0px 20px;
+
+                address {
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        .copyright {
+            .wrapper {
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        .footer-nav {
+            .contact {
+                margin: 0px;
+            }
+        }
+    }
+}

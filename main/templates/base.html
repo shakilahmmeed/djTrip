@@ -1,0 +1,56 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"/>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="{% static 'vendor/font-awesome-4.7.0/css/font-awesome.min.css' %}"/>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet"/>
+
+    <!-- SMART MENUS -->
+    <link rel="stylesheet" href="{% static 'vendor/smartmenus-1.1.0/css/sm-core-css.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/smartmenus-1.1.0/css/sm-blue/sm-blue.css' %}">
+
+    <!-- MAGNIFIC POPUP -->
+    <link rel="stylesheet" href="{% static 'vendor/magnific-popup/magnific-popup.css' %}">
+
+    <!-- MAIN STYLESHEET  -->
+    <link rel="stylesheet" href="{% static 'css/style-default.css' %}"/>
+
+</head>
+
+<body>
+{% block body %}
+{% endblock %}
+
+<!-- JQUERY   -->
+<script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+
+<!-- BOOTSTRAP   -->
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- SMART MENUS -->
+<script src="assets/vendor/smartmenus-1.1.0/jquery.smartmenus.js"></script>
+
+<!-- MAGNIFIC POPUP -->
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+
+<!-- MAIN SCRIPT  -->
+<script src="assets/js/script.js"></script>
+
+<!-- CUSTOM SCRIPT  -->
+<script src="assets/js/custom.js"></script>
+</body>
+
+</html>
