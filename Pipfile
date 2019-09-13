@@ -6,6 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+mysqlclient = {path = "./mysqlclient-1.4.4-cp37-cp37m-win32.whl"}
+pillow = "*"
 
 [requires]
 python_version = "3.7"
